@@ -39,6 +39,7 @@ public class ConsultingT1 extends TestBase{
         });
     }
 
+    @Tag("smoke")
     @Test
     @Description("Проверка доступности сайта и переход в раздел -О компании-, <motto of company> ")
     @DisplayName("Проверка раздела о компании  ")

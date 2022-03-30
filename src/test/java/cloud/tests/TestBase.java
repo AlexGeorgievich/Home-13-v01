@@ -3,6 +3,9 @@ package cloud.tests;
 import cloud.helps.Attach;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Link;
+import io.qameta.allure.Owner;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -12,7 +15,9 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.sleep;
 
 public class TestBase {
-
+    @Owner("Course QA.GURU")
+    @Link("Testing", url="https://www.t1-consulting.ru/")
+    @Feature("Задачи в репозитории")
     @BeforeAll
     static void setUp() {
         String browser = System.getProperty("browser", "chrome");
