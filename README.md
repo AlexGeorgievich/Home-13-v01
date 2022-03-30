@@ -42,7 +42,7 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 
 
 ### Сборка в Jenkins
-## <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/011_AlexGeorgievich_Home_13_v1/)
+### <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/011_AlexGeorgievich_Home_13_v1/)
 *Для запуска сборки необходимо указать значения параметров и нажать кнопку <code><strong>*Собрать*</strong></code>.*
 
 <p align="center">
@@ -86,7 +86,7 @@ gradle clean test
 gradle clean test
 ```
 ### Allure Reports отчет
-## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/011_AlexGeorgievich_Home_13_v1/)
+### <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/011_AlexGeorgievich_Home_13_v1/)
 <p align="center">
   <img src="images/screens/AllureReport1.png" alt="job" width="800">
 </p>
@@ -96,7 +96,7 @@ gradle clean test
 </p>
 
 ### AllureTestOps отчет
-## <img width="4%" title="Allure TestOPS" src="images/logo/Allure_Report.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/11706)
+### <img width="4%" title="Allure TestOPS" src="images/logo/Allure_Report.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/11706)
 <p align="center">
   <img src="images/screens/AllureTestOps.png" alt="job" width="800">
 </p>
@@ -106,7 +106,9 @@ gradle clean test
 </p>
 
 ## Интеграция с Jira
-- ### Страница с задачей в Jira
+ 
+### <img width="4%" title="Jira" src="images/logo/Jira.svg"> Интеграция с [Jira](https://jira.autotests.cloud/browse/AUTO-816)
+
 <p align="center">
 <img title="Jira issue" src="images/screens/jira.png">
 </p>
