@@ -57,6 +57,7 @@ public class ConsultingT1 extends TestBase{
     }
 
     // Проверка главного меню сайта с переменными названиями разделов меню, их наполнение страниц разделов
+    @Tag("properties")
     @ValueSource(strings = {"О компании", "Услуги", "Карта решений","Продукты","Контакты"})
     @ParameterizedTest(name = "Проверяем наличие пункта - \"{0}\" в меню навигации по сайту")
     void mainMenuTest(String subject) {
