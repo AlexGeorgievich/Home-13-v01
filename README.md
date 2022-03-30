@@ -3,7 +3,7 @@
 > <a target="_blank" href="https://www.t1-consulting.ru/">Ссылка на главную страницу сайта</a>
 
 
-### :drop_of_blood: Содержание:
+###  Содержание:
 
 - [Технологии и инструменты](#earth_africa-технологии-и-инструменты)
 - [Реализованные проверки](#earth_africa-Реализованные-проверки)
@@ -15,18 +15,19 @@
 
 
 ### Проект реализован с использованием
-Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure TestOps Telegram Jira
+IntelliJ IDEA Java Gradle Selenide Selenoid JUnit5 Jenkins Allure Report Allure TestOps Telegram Jira
 <p align="center">
-<img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
-<img width="6%" title="Java" src="images/logo/Java.svg">
-<img width="6%" title="Selenide" src="images/logo/Selenide.svg">
-<img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
-<img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
-<img width="6%" title="Gradle" src="images/logo/Gradle.svg">
-<img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
-<img width="6%" title="GitHub" src="images/logo/GitHub.svg">
-<img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
-<img width="6%" title="Telegram" src="images/logo/Telegram.svg">
+<img width="4%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
+<img width="4%" title="Java" src="images/logo/Java.svg">
+<img width="4%" title="Selenide" src="images/logo/Selenide.svg">
+<img width="4%" title="Selenoid" src="images/logo/Selenoid.svg">
+<img width="4%" title="Allure Report" src="images/logo/Allure_Report.svg">
+<img width="4%" title="Gradle" src="images/logo/Gradle.svg">
+<img width="4%" title="JUnit5" src="images/logo/JUnit5.svg">
+<img width="4%" title="GitHub" src="images/logo/GitHub.svg">
+<img width="4%" title="Jenkins" src="images/logo/Jenkins.svg">
+<img width="4%" title="Telegram" src="images/logo/Telegram.svg">
+<img width="4%" title="Jira" src="images/logo/Jira.svg">
 </p>
 
 ### Список проверок, реализованных в автотестах
@@ -35,7 +36,7 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 - [x] Проверка главного меню сайта с переменными названиями разделов меню, их наполнение страниц разделов
 - [x] Наличие раздела "О компании" и достоверности раздела меню 
 - [x] Проверка  меню и наполнение разделов меню "О компании"
-  -    проверки проводятся с использованием Параметризованных тестов
+  -    проверки проводятся с использованием параметризованных тестов
 - [x] Проверка наличия и доступности к скачиванию инструкции по эксплуатации системы "T1 Watchman", формат PDF
   - проверка содержимого инструкции
 - [x] Проверка на наличие ошибок в console log
@@ -43,7 +44,7 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 
 ### Сборка в Jenkins
 ### <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/011_AlexGeorgievich_Home_13_v1/)
-*Для запуска сборки необходимо указать значения параметров и нажать кнопку <code><strong>*Собрать*</strong></code>.*
+*Для запуска сборки необходимо указать значения параметров и нажать кнопку <code><strong>*Собрать с параметрами*</strong></code>.*
 
 <p align="center">
   <img src="images/screens/Jenkins.png" alt="job" width="800">
