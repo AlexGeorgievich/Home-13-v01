@@ -114,7 +114,7 @@ gradle clean test
 ### Отчет в Telegram
 
 <p align="center">
-  <img src="images/screens/telegram.png" alt="job" width="800">
+  <img src="images/screens/telegram2.png" alt="job" width="400">
 </p>
 
 ### Видео примеры прохождения тестов
