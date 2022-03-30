@@ -42,34 +42,59 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 
 
 ### Сборка в Jenkins
+## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/011_AlexGeorgievich_Home_13_v1/)
+*Для запуска сборки необходимо указать значения параметров и нажать кнопку <code><strong>*Собрать*</strong></code>.*
+
+<p align="center">
+  <img src="images/screenshots/Jenkins.png" alt="job" width="800">
+</p>
+
+<p align="center">
+  <img src="images/screenshots/Jenkins2.png" alt="job" width="800">
+</p>
+
+### Удаленный запуск тестов
+
 ```bash
-gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
+gradle clean test 
+-Dbrowser=${BROWSER}
+-DbrowserVersion=${BROWSER_VERSION}
+-DbrowserSize=${BROWSER_SIZE}
+-DremoteDriverUrl=https://${USER}:${PASSWORD}@${REMOTE_DRIVER_URL}/wd/hub/
+-DvideoStorage=https://${REMOTE_DRIVER_URL}/video/
+-Dthreads=${THREADS}
 ```
+### Параметры сборки
+
+> <code>BROWSER</code> – браузер, в котором будут выполняться тесты (_по умолчанию - <code>chrome</code>_).
+>
+> <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты (_по умолчанию - <code>91.0</code>_).
+>
+> <code>BROWSER_SIZE</code> – разрешени окна браузера, в котором будут выполняться тесты (_по умолчанию - <code>1920x1080</code>_).
+>
+> <code>REMOTE_URL</code> – адрес удаленного сервера, на котором будут запускаться тесты.
+>
+> <code>USER</code> - логин пользователя для подключения к Selenoid
+>
+> <code>PASSWORD</code> - пароль пользователя для подключения к Selenoid
+>
+> <code>THREADS</code> - количество одновременных запускаемых потоков для тестов.
+>
+ 
 ### Запуск из терминала
 ```bash
 gradle clean test
 ```
 ### Allure отчет
 
+<p align="center">
+  <img src="images/screenshots/AllureReport1.png" alt="job" width="800">
+</p>
+
 ### Отчет в Telegram
 
 ### Видео примеры прохождения тестов
-
-### For run remote tests need fill remote.properties or to pass value:
-
-* browser (default chrome)
-* browserVersion (default 89.0)
-* browserSize (default 1920x1080)
-* browserMobileView (mobile device name, for example iPhone X)
-* remoteDriverUrl (url address from selenoid or grid)
-* videoStorage (url address where you should get video)
-* threads (number of threads)
-
-
-Run tests with filled remote.properties:
-
-Run tests with not filled remote.properties:
-
+ 
 Serve report:
 ```bash
 allure serve build/allure-results
