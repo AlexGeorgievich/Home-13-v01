@@ -1,4 +1,5 @@
-## Проект по тестированию сайта компании "Т1 Консалтинг", – российский разработчик и интегратор, входит в Группу Т1.
+## Проект по тестированию сайта компании "Т1 Консалтинг"
+#### российский разработчик и интегратор, входит в Группу Т1
 > <a target="_blank" href="https://www.t1-consulting.ru/">Ссылка на главную страницу сайта</a>
 
 
@@ -14,9 +15,18 @@
 
 
 ### Проект реализован с использованием
-
-![This is an image](/design/icons/Java.png)![This is an image](/design/icons/Gradle.png)![This is an image](/design/icons/Intelij_IDEA.png)![This is an image](/design/icons/Selenide.png)![This is an image](/design/icons/Selenoid.png)![This is an image](/design/icons/JUnit5.png)![This is an image](/design/icons/Jenkins.png)![This is an image](/design/icons/Allure_Report.png)![This is an image](/design/icons/AllureTestOps.png)![This is an image](/design/icons/Telegram.png)![This is an image](/design/icons/Jira.png)
-Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure TestOps Telegram Jira
+<p align="center">
+<img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
+<img width="6%" title="Java" src="images/logo/Java.svg">
+<img width="6%" title="Selenide" src="images/logo/Selenide.svg">
+<img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
+<img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
+<img width="6%" title="Gradle" src="images/logo/Gradle.svg">
+<img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
+<img width="6%" title="GitHub" src="images/logo/GitHub.svg">
+<img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
+<img width="6%" title="Telegram" src="images/logo/Telegram.svg">
+</p>
 
 ### Список проверок, реализованных в автотестах
 - [x] Наличие  заголовка и меню на главной странице
@@ -27,6 +37,20 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 - [x] Проверка наличия и доступности к скачиванию инструкции по эксплуатации системы "T1 Watchman"
 - [x] Проверка на наличие ошибок в console log
 
+
+### Сборка в Jenkins
+```bash
+gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
+```
+### Запуск из терминала
+```bash
+gradle clean test
+```
+### Allure отчет
+
+### Отчет в Telegram
+
+### Видео примеры прохождения тестов
 
 ### For run remote tests need fill remote.properties or to pass value:
 
@@ -40,14 +64,8 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 
 
 Run tests with filled remote.properties:
-```bash
-gradle clean test
-```
 
 Run tests with not filled remote.properties:
-```bash
-gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
-```
 
 Serve report:
 ```bash
