@@ -16,7 +16,7 @@ import static com.codeborne.selenide.Selenide.sleep;
 
 public class TestBase {
     @Owner("Course QA.GURU")
-    @Link("Testing", url="https://www.t1-consulting.ru/")
+    @Link(value = "Testing", url="https://www.t1-consulting.ru/")
     @Feature("Задачи в репозитории")
     @BeforeAll
     static void setUp() {
