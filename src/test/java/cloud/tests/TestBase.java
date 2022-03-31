@@ -26,10 +26,9 @@ public class TestBase {
         String remoteUrl = System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub");
         String login = System.getProperty("login", "user1");
         String pass = System.getProperty("pass", "1234");
+        String url = "https://" + login + ":" + pass + "@" + remoteUrl;
 
         Configuration.baseUrl =  "https://www.t1-consulting.ru/";
-
-        String url = "https://" + login + ":" + pass + "@" + remoteUrl;
         Configuration.remote = url;
         Configuration.browser = browser;
         Configuration.browserVersion = version;
@@ -45,7 +44,6 @@ public class TestBase {
         Attach.attachAsText("Browser: ", browser);
         Attach.attachAsText("Version: ", version);
         Attach.attachAsText("Remote Url: ", remoteUrl);
-
     }
 
     @AfterEach
