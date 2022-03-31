@@ -13,6 +13,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.sleep;
+import static java.lang.String.format;
 
 public class TestBase {
     @Owner("Course QA.GURU")
@@ -26,6 +27,7 @@ public class TestBase {
 //        String remoteUrl = System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub");
         String login = System.getProperty("login");
         String password = System.getProperty("password");
+        Configuration.remote = format("https://%s:%s@%s",login,password,System.getProperty("remoteDriverUrl"));
 //        String url = "https://" + login + ":" + password + "@" + remoteUrl;
 //       String remoteUrl = System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub");
 //        String login = System.getProperty("login", "user1");
@@ -47,7 +49,8 @@ public class TestBase {
 
         Attach.attachAsText("Browser: ", browser);
         Attach.attachAsText("Version: ", version);
-        Attach.attachAsText("Remote Url: ", remoteUrl);
+        Attach.attachAsText("Remote Url: ", remoteDriverUrl);
+//        Attach.attachAsText("Remote Url: ", remoteUrl);
     }
 
     @AfterEach
