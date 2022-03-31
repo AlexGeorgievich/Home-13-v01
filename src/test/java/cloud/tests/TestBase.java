@@ -23,17 +23,17 @@ public class TestBase {
         String browser = System.getProperty("browser", "chrome");
         String version = System.getProperty("version", "91");
         String size = System.getProperty("size", "1920x1080");
-        String remoteUrl = System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub");
+//        String remoteUrl = System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub");
         String login = System.getProperty("login");
-        String pass = System.getProperty("pass");
-        String url = "https://" + login + ":" + pass + "@" + remoteUrl;
+        String password = System.getProperty("password");
+//        String url = "https://" + login + ":" + password + "@" + remoteUrl;
 //       String remoteUrl = System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub");
 //        String login = System.getProperty("login", "user1");
-//        String pass = System.getProperty("pass", "1234");
-//        String url = "https://" + login + ":" + pass + "@" + remoteUrl;
+//        String password = System.getProperty("password", "1234");
+//        String url = "https://" + login + ":" + password + "@" + remoteUrl;
 
         Configuration.baseUrl =  "https://www.t1-consulting.ru/";
-        Configuration.remote = url;
+//        Configuration.remote = url;
         Configuration.browser = browser;
         Configuration.browserVersion = version;
         Configuration.browserSize = size;
