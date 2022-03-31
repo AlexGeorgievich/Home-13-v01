@@ -50,7 +50,6 @@ public class TestBase {
         Attach.attachAsText("Browser: ", browser);
         Attach.attachAsText("Version: ", version);
         Attach.attachAsText("Remote Url: ", remoteUrl);
-//        Attach.attachAsText("Remote Url: ", remoteDriverUrl);
     }
 
     @AfterEach

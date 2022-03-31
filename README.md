@@ -5,16 +5,16 @@
 
 ###  Содержание:
 
-- [Технологии и инструменты](#earth_africa-технологии-и-инструменты)
-- [Реализованные проверки](#earth_africa-Реализованные-проверки)
-- [Сборка в Jenkins](#earth_africa-Jenkins-job)
-- [Запуск из терминала](#earth_africa-Запуск-тестов-из-терминала)
-- [Allure отчет](#earth_africa-Allure-отчет)
-- [Отчет в Telegram](#earth_africa-Уведомление-в-Telegram-при-помощи-бота)
+- [Технологии и инструменты](#techno-технологии-и-инструменты)
+- [Реализованные проверки](#control-Реализованные-проверки)
+- [Сборка в Jenkins](#jenkins-Jenkins-job)
+- [Запуск из терминала](#terminal-Запуск-тестов-из-терминала)
+- [Allure отчет](#report-Allure-отчет)
+- [Отчет в Telegram](#telegram-Уведомление-в-Telegram-при-помощи-бота)
 - [Видео примеры прохождения тестов](#earth_africa-Примеры-видео-о-прохождении-тестов)
 
 
-### Проект реализован с использованием
+### :techno: Проект реализован с использованием
 IntelliJ IDEA Java Gradle Selenide Selenoid JUnit5 Jenkins Allure Report Allure TestOps Telegram Jira
 <p align="center">
 <img width="4%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
@@ -30,7 +30,7 @@ IntelliJ IDEA Java Gradle Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 <img width="4%" title="Jira" src="images/logo/Jira.svg">
 </p>
 
-### Список проверок, реализованных в автотестах
+### :control: Список проверок, реализованных в автотестах
 - [x] Наличие  заголовка и меню на главной странице
 - [x] Наличие заданных пунктов подменю в разделе "О компании" и проверка "девиза" компании
 - [x] Проверка главного меню сайта, разделов меню, наполнения страниц разделов 
@@ -41,7 +41,7 @@ IntelliJ IDEA Java Gradle Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 - [x] Проверка на наличие ошибок в console log
 
 
-### Сборка в Jenkins
+### :jenkins:  Сборка в Jenkins
 ### <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/011_AlexGeorgievich_Home_13_v1/)
 *Для запуска сборки необходимо указать значения параметров и нажать кнопку <code><strong>*Собрать с параметрами*</strong></code>.*
 
@@ -81,11 +81,11 @@ gradle clean test
 > <code>THREADS</code> - количество одновременных запускаемых потоков для тестов.
 >
  
-### Запуск из терминала
+### :terminal: Запуск из терминала
 ```bash
 gradle clean test
 ```
-### Allure Reports отчет
+### :report:  Allure Reports отчет
 ### <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/011_AlexGeorgievich_Home_13_v1/)
 <p align="center">
   <img src="images/screens/AllureReport1.png" alt="job" width="800">
@@ -113,7 +113,7 @@ gradle clean test
 <img title="Jira issue" src="images/screens/jira.png">
 </p>
 
-### Отчет в Telegram
+### :telegram: Отчет в Telegram
 
 <p align="center">
   <img src="images/screens/telegram2.png" alt="job" width="400">
