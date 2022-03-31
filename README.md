@@ -119,14 +119,13 @@ gradle clean test
   <img src="images/screens/telegram2.png" alt="job" width="400">
 </p>
 
-### Видео примеры прохождения тестов
+### Видео прохождения тестов
 
 > К каждому тесту в отчете прилагается видео.
 <p align="center">
-  <img title="Selenoid Video" src="images/screens/AllureReportVideo.mp4">
+  <video title="Selenoid Video" src="images/screens/AllureReportVideo.mp4" >
 </p>
  
-
  
 :heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
 :blue_heart: <a target="_blank" href="https://t.me/qa_automation">t.me/qa_automation</a>

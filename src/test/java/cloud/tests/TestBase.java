@@ -25,11 +25,6 @@ public class TestBase {
         String version = System.getProperty("version", "91");
         String size = System.getProperty("size", "1920x1080");
         String remoteUrl = System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub");
-//        String login = System.getProperty("login");
-//        String password = System.getProperty("password");
-//        Configuration.remote = format("https://%s:%s@%s",login,password,System.getProperty("remoteDriverUrl"));
-//       String remoteUrl = System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub");
-//        String url = "https://" + login + ":" + password + "@" + remoteUrl;
         String login = System.getProperty("login", "user1");
         String password = System.getProperty("password", "1234");
         String url = "https://" + login + ":" + password + "@" + remoteUrl;
