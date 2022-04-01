@@ -123,7 +123,7 @@ gradle clean test
 
 > К каждому тесту в отчете прилагается видео.
 <p align="center">
-  <video title="Selenoid Video" src="images/screens/AllureReportVideo.mp4" >
+  <img title="Selenoid Video" src="images/screens/T1Consulting.gif" >
 </p>
  
  
