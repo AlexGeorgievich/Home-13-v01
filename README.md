@@ -14,7 +14,7 @@
 - [Видео примеры прохождения тестов](#earth_africa-Примеры-видео-о-прохождении-тестов)
 
 
-### :techno: Проект реализован с использованием
+###  Проект реализован с использованием
 IntelliJ IDEA Java Gradle Selenide Selenoid JUnit5 Jenkins Allure Report Allure TestOps Telegram Jira
 <p align="center">
 <img width="4%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
@@ -30,7 +30,7 @@ IntelliJ IDEA Java Gradle Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 <img width="4%" title="Jira" src="images/logo/Jira.svg">
 </p>
 
-### :control: Список проверок, реализованных в автотестах
+###  Список проверок, реализованных в автотестах
 - [x] Наличие  заголовка и меню на главной странице
 - [x] Наличие заданных пунктов подменю в разделе "О компании" и проверка "девиза" компании
 - [x] Проверка главного меню сайта, разделов меню, наполнения страниц разделов 
@@ -41,7 +41,7 @@ IntelliJ IDEA Java Gradle Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 - [x] Проверка на наличие ошибок в console log
 
 
-### :jenkins:  Сборка в Jenkins
+###   Сборка в Jenkins
 ### <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/011_AlexGeorgievich_Home_13_v1/)
 *Для запуска сборки необходимо указать значения параметров и нажать кнопку <code><strong>*Собрать с параметрами*</strong></code>.*
 

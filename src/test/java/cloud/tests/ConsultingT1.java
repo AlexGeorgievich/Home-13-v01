@@ -3,10 +3,7 @@ package cloud.tests;
 import cloud.helps.Attach;
 import com.codeborne.pdftest.PDF;
 import com.codeborne.selenide.Selenide;
-import io.qameta.allure.Description;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Link;
-import io.qameta.allure.Owner;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -129,6 +126,9 @@ public class ConsultingT1 extends TestBase {
         });
     }
 
+    @Owner("Курс  QA.GURU")
+    @Link(value = "Тестирование UI сайта", url = "https://www.t1-consulting.ru/")
+    @Story("Ошибки в консоли")
     @Test
     @Description("Проверка на ошибки")
     @DisplayName("Проверка на наличие ошибок в console log ")
@@ -152,11 +152,11 @@ public class ConsultingT1 extends TestBase {
         step("Открытие сайта по адресу - " + baseUrl, () -> {
             open(baseUrl);
         });
-        step("Формирование запроса на поиск ключевого слова по сайту", () ->{
+        step("Формирование запроса на поиск ключевого слова по сайту", () -> {
             $(".but-s").click();
             $("[name=q]").setValue("Watchman").pressEnter();
         });
-        step(" Контроль наличия результатов поиска по сайту",() ->{
+        step(" Контроль наличия результатов поиска по сайту", () -> {
             $("div.t-achiement").shouldHave(text("Watchman"));
         });
     }
