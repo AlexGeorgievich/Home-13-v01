@@ -136,7 +136,7 @@ public class ConsultingT1 extends TestBase {
         step("Открытие сайта по адресу - " + baseUrl, () -> {
             open(baseUrl);
         });
-        step("Console logs should not contain text 'SEVERE'", () -> {
+        step("Консольные логи не должны содержать значение -  'SEVERE'", () -> {
             String consoleLogs = Attach.getConsoleLogs();
             String errorText = "SEVERE";
             assertThat(consoleLogs).doesNotContain(errorText);
